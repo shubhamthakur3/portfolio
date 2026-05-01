@@ -6,7 +6,7 @@ export interface Project {
   technologies: string[];
   githubUrl: string;
   liveUrl?: string;
-  featured: boolean;
+
   emoji: string;
   color: string;
 }
@@ -21,7 +21,7 @@ export const projects: Project[] = [
     technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS"],
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
-    featured: true,
+
     emoji: "📋",
     color: "bg-teal",
   },
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     technologies: ["Next.js", "MongoDB", "Socket.io", "Tailwind CSS"],
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
-    featured: true,
+
     emoji: "🤝",
     color: "bg-purple",
   },
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     technologies: ["React", "AWS S3", "Node.js", "Redis", "Docker"],
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
-    featured: true,
+
     emoji: "☁️",
     color: "bg-blue",
   },
@@ -59,7 +59,7 @@ export const projects: Project[] = [
       "A design collaboration tool that enables teams to create, iterate, and ship beautiful interfaces together.",
     technologies: ["TypeScript", "Canvas API", "WebSocket", "React"],
     githubUrl: "https://github.com",
-    featured: false,
+
     emoji: "🎨",
     color: "bg-pink",
   },
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     technologies: ["Next.js", "D3.js", "Python", "FastAPI", "PostgreSQL"],
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
-    featured: false,
+
     emoji: "📊",
     color: "bg-orange",
   },
@@ -84,10 +84,10 @@ export const projects: Project[] = [
       "An interactive learning platform that makes programming accessible through guided exercises and real-time feedback.",
     technologies: ["React", "Node.js", "OpenAI API", "MongoDB", "Tailwind CSS"],
     githubUrl: "https://github.com",
-    featured: false,
+
     emoji: "🧑‍💻",
     color: "bg-rose",
   },
 ];
 
-export const featuredProjects = projects.filter((p) => p.featured);
+

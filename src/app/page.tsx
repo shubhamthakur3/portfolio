@@ -1,7 +1,7 @@
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import SectionTitle from "@/components/SectionTitle";
 import ProjectCard from "@/components/ProjectCard";
-import { projects, featuredProjects } from "@/data/projects";
+import { projects } from "@/data/projects";
 import { skillCategories } from "@/data/skills";
 
 export default function Home() {
@@ -58,61 +58,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════════
-          FEATURED WORK — Dark Section
-          ══════════════════════════════════════════════ */}
-      <section className="bg-navy py-20 md:py-28 px-6 md:px-10">
-        <div className="max-w-7xl mx-auto">
-          <AnimateOnScroll>
-            <h2 className="font-display text-5xl md:text-6xl lg:text-7xl font-black text-white text-center mb-4">
-              Featured Work
-            </h2>
-          </AnimateOnScroll>
-          <AnimateOnScroll delay={100}>
-            <p className="text-lg md:text-xl font-bold text-gray-400 text-center max-w-2xl mx-auto mb-16">
-              A selection of projects I&apos;m most proud of. Each one represents a unique challenge and learning experience.
-            </p>
-          </AnimateOnScroll>
 
-          {/* Featured Projects — Large Cards with Screenshots */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {featuredProjects.map((project, index) => (
-              <AnimateOnScroll key={project.id} delay={index * 120}>
-                <a
-                  href={project.liveUrl || project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group block rounded-xl border-4 border-gray-600 bg-navy-light overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:border-accent hover:shadow-[6px_6px_0px_0px_#34d399]"
-                >
-                  {/* Screenshot area */}
-                  <div className="aspect-video bg-gray-100 border-b-4 border-gray-600 group-hover:border-accent transition-colors duration-300 flex items-center justify-center">
-                    <span className="text-6xl md:text-7xl">{project.emoji}</span>
-                  </div>
-                  {/* Info */}
-                  <div className={`${project.color} px-5 py-5`}>
-                    <h3 className="font-display text-xl md:text-2xl font-black text-white">
-                      {project.title}
-                    </h3>
-                    <p className="text-sm font-bold text-white/80 mt-1">
-                      {project.summary}
-                    </p>
-                  </div>
-                </a>
-              </AnimateOnScroll>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ══════════════════════════════════════════════
-          ALL PROJECTS — Light Section
+          ALL PROJECTS — Dark Section
           ══════════════════════════════════════════════ */}
-      <section id="projects" className="py-20 md:py-28 px-6 md:px-10 scroll-mt-24">
+      <section id="projects" className="bg-navy py-20 md:py-28 px-6 md:px-10 scroll-mt-24">
         <div className="max-w-7xl mx-auto">
           <AnimateOnScroll>
             <SectionTitle
               title="My Projects"
               subtitle="I love to create things, and I'm always working on something new! You can view some of my favorite projects below."
+              dark
             />
           </AnimateOnScroll>
 
