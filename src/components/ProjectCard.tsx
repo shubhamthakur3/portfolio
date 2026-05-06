@@ -18,13 +18,22 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </div>
 
       {/* Bottom — Info area with color */}
-      <div className={`${project.color} px-5 py-5`}>
-        <h3 className="font-display text-xl md:text-2xl font-black text-white">
+      <div className={`${project.color} px-5 py-6 min-h-[120px] flex flex-col justify-center transition-all duration-500`}>
+        <h3 className="font-display text-xl md:text-2xl font-black text-white transition-all duration-300 group-hover:-translate-y-1">
           {project.title}
         </h3>
-        <p className="text-sm font-bold text-white/80 mt-1">
-          {project.summary}
-        </p>
+        
+        <div className="relative mt-1 h-14 overflow-hidden">
+          {/* Summary - Visible by default, slides up and fades out on hover */}
+          <p className="text-sm font-bold text-white/80 transition-all duration-300 group-hover:-translate-y-full group-hover:opacity-0">
+            {project.summary}
+          </p>
+          
+          {/* Description - Hidden by default, slides up into view on hover */}
+          <p className="absolute top-0 left-0 text-[11px] md:text-xs font-bold text-white leading-relaxed opacity-0 translate-y-full transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 line-clamp-3">
+            {project.description}
+          </p>
+        </div>
       </div>
     </a>
   );

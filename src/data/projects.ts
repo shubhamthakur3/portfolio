@@ -12,81 +12,50 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  {
-    id: "taskflow",
-    title: "TaskFlow",
-    summary: "Team Project Management",
-    description:
-      "A project management dashboard that helps teams organize, track, and deliver work with clarity and focus.",
-    technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
 
-    emoji: "📋",
+  {
+    id: "hotel-backend",
+    title: "Hotel Backend API",
+    summary: "Scalable Booking Engine",
+    description:
+      "A production-grade hotel booking platform with concurrency-safe inventory management, automated task processing, and secure payment integration.",
+    technologies: ["Django", "Python", "PostgreSQL", "Redis", "Stripe", "Celery"],
+    githubUrl: "https://github.com",
+    emoji: "🏨",
     color: "bg-teal",
   },
   {
-    id: "devconnect",
-    title: "DevConnect",
-    summary: "Developer Community Platform",
+    id: "travellers-dairy",
+    title: "Traveller's Dairy",
+    summary: "Himalayan Travel Log",
     description:
-      "A community platform for developers to share knowledge, collaborate on projects, and build meaningful connections.",
-    technologies: ["Next.js", "MongoDB", "Socket.io", "Tailwind CSS"],
+      "An immersive travel dairy capturing the essence of the Himalayas through rich storytelling and dynamic visual experiences.",
+    technologies: ["HTML", "CSS", "JavaScript", "GSAP", "AOS"],
     githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-
-    emoji: "🤝",
-    color: "bg-purple",
-  },
-  {
-    id: "cloudsync",
-    title: "CloudSync",
-    summary: "Secure Cloud Storage",
-    description:
-      "A secure cloud storage solution with intelligent file organization and seamless cross-device synchronization.",
-    technologies: ["React", "AWS S3", "Node.js", "Redis", "Docker"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-
-    emoji: "☁️",
+    emoji: "🏔️",
     color: "bg-blue",
   },
   {
-    id: "pixelcraft",
-    title: "PixelCraft",
-    summary: "Design Collaboration Tool",
+    id: "mediashare",
+    title: "MediaShare",
+    summary: "Photo & Video Sharing Platform",
     description:
-      "A design collaboration tool that enables teams to create, iterate, and ship beautiful interfaces together.",
-    technologies: ["TypeScript", "Canvas API", "WebSocket", "React"],
+      "A backend-centric application for secure photo and video sharing, featuring ImageKit integration for real-time optimization and JWT-based authentication.",
+    technologies: ["Python", "FastAPI", "SQLite", "ImageKit.io", "JWT"],
     githubUrl: "https://github.com",
-
-    emoji: "🎨",
-    color: "bg-pink",
-  },
-  {
-    id: "datapulse",
-    title: "DataPulse",
-    summary: "Analytics Dashboard",
-    description:
-      "An analytics dashboard that transforms complex data into clear, actionable insights with beautiful visualizations.",
-    technologies: ["Next.js", "D3.js", "Python", "FastAPI", "PostgreSQL"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-
-    emoji: "📊",
+    emoji: "📸",
     color: "bg-orange",
   },
   {
-    id: "codementor",
-    title: "CodeMentor",
-    summary: "Interactive Learning Platform",
+    id: "time-tracking",
+    title: "Time Tracking",
+    summary: "Python Automation Script",
     description:
-      "An interactive learning platform that makes programming accessible through guided exercises and real-time feedback.",
-    technologies: ["React", "Node.js", "OpenAI API", "MongoDB", "Tailwind CSS"],
+      "An automation script integrated with Google Calendar API to streamline time tracking processes, featuring seamless error handling and local deployment.",
+    technologies: ["Python", "Google Calendar API", "Pyinstaller"],
     githubUrl: "https://github.com",
-
-    emoji: "🧑‍💻",
-    color: "bg-rose",
+    emoji: "⏱️",
+    color: "bg-purple",
   },
 ];
 
