@@ -18,12 +18,13 @@ export default function Home() {
             <div className="relative mb-10">
               <div className="w-56 h-56 md:w-72 md:h-72 rounded-full border-[6px] border-navy overflow-hidden bg-accent relative hover:border-accent transition-all duration-500 pulse-border">
                 <Image
-                  src="/profile.JPG"
+                  src="/me.jpg"
                   alt="Shubham Thakur"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 224px, 288px"
                   priority
+                  unoptimized
                 />
               </div>
             </div>
