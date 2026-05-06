@@ -1,3 +1,4 @@
+import Image from "next/image";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import SectionTitle from "@/components/SectionTitle";
 import ProjectCard from "@/components/ProjectCard";
@@ -15,8 +16,14 @@ export default function Home() {
           {/* Profile Avatar */}
           <AnimateOnScroll>
             <div className="relative mb-10">
-              <div className="w-56 h-56 md:w-72 md:h-72 rounded-full border-[6px] border-navy overflow-hidden bg-accent flex items-center justify-center hover:border-accent transition-all duration-500 pulse-border">
-                <span className="text-8xl md:text-9xl">👨‍💻</span>
+              <div className="w-56 h-56 md:w-72 md:h-72 rounded-full border-[6px] border-navy overflow-hidden bg-accent relative hover:border-accent transition-all duration-500 pulse-border">
+                <Image
+                  src="/profile.jpg"
+                  alt="Shubham Thakur"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
           </AnimateOnScroll>
